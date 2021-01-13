@@ -24,20 +24,19 @@ class FormExample extends FormRequest
     public function rules()
     {
         return [
-            'agent_number'=>'required|numeric|unique:agencies',
+            'code'=>'required|numeric|unique:agencies',
             'name'=>'required|string',
             'phone'=>'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|min:9',
             'email'=>'required|email',
             'address'=>'required|string',
-            'manager_name'=>'required|string',
+            'manager'=>'required|string',
 
         ];
     }
     public function messages()
     {
         return [
-            'agent_number.unique'=>'Mã đại lý đã tồn tại',
-            'agent_number.required'=>'Agent Number is required',
+            'code.unique'=>'Mã đại lý đã tồn tại',
             'name.required'=>'Name is required',
             'phone.required'=>'Phone is required',
             'email.required'=>'Email is required',

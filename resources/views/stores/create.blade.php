@@ -16,33 +16,45 @@
                     @csrf
                     <div class="form-group">
                         <label>Mã số đại lý </label>
-                        <input type="number" class="form-control" name="code"  placeholder="Enter ma">
-{{--                        @if($errors->any())--}}
-{{--                            <p class="alert-danger my-sm-4">{{ $errors->first('code') }}</p>--}}
-{{--                        @endif--}}
+                        <input type="number" class="form-control" name="code"  placeholder="Enter ma code ">
+                        @if($errors->any())
+                            <p class="alert-danger my-sm-4">{{ $errors->first('code') }}</p>
+                        @endif
                     </div>
                     <div class="form-group">
                         <label>Tên đại lý </label>
                         <input type="text" class="form-control" name="name"  placeholder="Enter name">
-{{--                        @if($errors->any())--}}
-{{--                            <p class="alert-danger my-sm-4">{{ $errors->first('name') }}</p>--}}
-{{--                        @endif--}}
+                        @if($errors->any())
+                            <p class="alert-danger my-sm-4">{{ $errors->first('name') }}</p>
+                        @endif
                     </div>
                     <div class="form-group">
                         <label>Điện thoại</label>
                         <input type="text" class="form-control" name="phone"  placeholder="Enter phone">
+                        @if($errors->any())
+                            <p class="alert-danger my-sm-4">{{ $errors->first('phone') }}</p>
+                        @endif
                     </div>
                     <div class="form-group">
                         <label>Email </label>
                         <input type="email" class="form-control" name="email"  placeholder="Enter email">
+                        @if($errors->any())
+                            <p class="alert-danger my-sm-4">{{ $errors->first('email') }}</p>
+                        @endif
                     </div>
                     <div class="form-group">
                         <label>Địa chỉ </label>
                         <input type="text" class="form-control" name="address"  placeholder="Enter address">
+                        @if($errors->any())
+                            <p class="alert-danger my-sm-4">{{ $errors->first('address') }}</p>
+                        @endif
                     </div>
                     <div class="form-group">
                         <label>Tên người quản lý </label>
-                        <input type="text" class="form-control" name="manager"  placeholder="Enter content">
+                        <input type="text" class="form-control" name="manager"  placeholder="Enter name manager">
+                        @if($errors->any())
+                            <p class="alert-danger my-sm-4">{{ $errors->first('manager') }}</p>
+                        @endif
                     </div>
                     <div class="form-group">
                         <label>Trạng thái</label>

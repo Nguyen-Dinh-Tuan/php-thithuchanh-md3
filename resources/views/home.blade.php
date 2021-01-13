@@ -178,7 +178,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 {{--                                        <li>--}}
 {{--                                            <a href="widgets.html"><i class="fa fa-flask nav_icon"></i>Widgets</a>--}}
 {{--                                        </li>--}}
-{{--                                        <li>--}}
+                                        <li>
 {{--                                            <a href="#"><i class="fa fa-check-square-o nav_icon"></i>Forms<span class="fa arrow"></span></a>--}}
 {{--                                            <ul class="nav nav-second-level">--}}
 {{--                                                <li>--}}
@@ -226,8 +226,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             {{--            </div>--}}
         </div>
     </div>
-{{--    <!-- /#page-wrapper -->--}}
-{{--</div>--}}
+    <!-- /#page-wrapper -->
+</div>
 <!-- /#wrapper -->
     <!-- Bootstrap Core JavaScript -->
     <script src="{{asset('backend/js/bootstrap.min.js')}}"></script>
