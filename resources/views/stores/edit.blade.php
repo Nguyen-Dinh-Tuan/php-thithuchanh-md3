@@ -13,7 +13,7 @@
                     @csrf
                     <div class="form-group">
                         <label>Mã số đại lý </label>
-                        <input type="number" class="form-control" name="code"  placeholder="Enter number"  value="{{ $store->code }}>
+                        <input type="number" class="form-control" name="code"  placeholder="Enter number"  value="{{ $store->code }}">
                     </div>
                     <div class="form-group">
                         <label>Tên đại lý </label>
@@ -36,8 +36,12 @@
                         <input type="text" class="form-control" name="manager"  placeholder="Enter name" value="{{$store->manager}}">
                     </div>
                     <div class="form-group">
-                        <label>Trạng thái  </label>
-                        <input type="text" class="form-control" name="status"  placeholder="Enter status" value="{{$store->status}}">
+                        <label>Trạng thái</label>
+                        <select name="status" id="status">
+                            <option value="Hoạt động">Hoạt động</option>
+                            <option value="Ngừng hoạt động ">Ngừng hoạt động</option>
+                            </option>
+                        </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Update</button>
                     <button class="btn btn-secondary" onclick="window.history.go(-1); return false;">Hủy</button>

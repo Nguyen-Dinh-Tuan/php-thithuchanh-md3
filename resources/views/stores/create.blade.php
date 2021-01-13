@@ -16,11 +16,17 @@
                     @csrf
                     <div class="form-group">
                         <label>Mã số đại lý </label>
-                        <input type="number" class="form-control" name="code"  placeholder="Enter number">
+                        <input type="number" class="form-control" name="code"  placeholder="Enter ma">
+{{--                        @if($errors->any())--}}
+{{--                            <p class="alert-danger my-sm-4">{{ $errors->first('code') }}</p>--}}
+{{--                        @endif--}}
                     </div>
                     <div class="form-group">
                         <label>Tên đại lý </label>
                         <input type="text" class="form-control" name="name"  placeholder="Enter name">
+{{--                        @if($errors->any())--}}
+{{--                            <p class="alert-danger my-sm-4">{{ $errors->first('name') }}</p>--}}
+{{--                        @endif--}}
                     </div>
                     <div class="form-group">
                         <label>Điện thoại</label>
@@ -39,19 +45,13 @@
                         <input type="text" class="form-control" name="manager"  placeholder="Enter content">
                     </div>
                     <div class="form-group">
-                        <label>Trạng thái  </label>
-                        <input type="text" class="form-control" name="status"  placeholder="Enter content">
+                        <label>Trạng thái</label>
+                        <select name="status" id="status">
+                            <option value="Hoạt động">Hoạt động</option>
+                            <option value="Ngừng hoạt động ">Ngừng hoạt động</option>
+                            </option>
+                        </select>
                     </div>
-{{--                    <div class="form-group">--}}
-{{--                        <label>Kiểu ghi chú</label>--}}
-{{--                        <select class="form-control" name="type_id">--}}
-{{--                            @foreach($notetype as $note)--}}
-{{--                                <option value="{{ $note->id }}">{{ $note->name }}</option>--}}
-{{--                            @endforeach--}}
-{{--                        </select>--}}
-{{--                    </div>--}}
-
-
                     <button type="submit" class="btn btn-primary">Thêm mới</button>
                     <button class="btn btn-secondary" onclick="window.history.go(-1); return false;">Hủy</button>
                 </form>
